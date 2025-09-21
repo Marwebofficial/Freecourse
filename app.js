@@ -5,6 +5,8 @@ if (request == user) {
 } else if (request != user) {
   user.push(request);
   alert(`you were added : ${request}`);
+} else if (request == "") {
+  alert("cant leave input empty");
 } else {
   alert("you are not allowed");
 }
