@@ -4,7 +4,7 @@ if (request == user) {
   alert(`Welcome : ${request}`);
 } else if (request != user) {
   user.push(request);
-  alert(`you were added : ${request}`);
+  print(`you were added : ${request}`);
 } else if (request == "") {
   alert("cant leave input empty");
 } else {
