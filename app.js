@@ -1,7 +1,7 @@
 let user = ["james", "jane"];
 const request = prompt(`Enter your registered name`);
 let create = user.push(request);
-if (user != request) {
+if (user != request && null) {
   let added = prompt(request);
   exe2();
 } else if (user == request) {
