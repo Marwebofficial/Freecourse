@@ -14,7 +14,7 @@ function exe() {
   alert(`Welcome back ${request}`);
 }
 function exe2() {
-  alert(`${create} you were just registered`);
+  alert(`${request} you were just registered`);
 }
 function exe3() {
   alert(`you cant leave input empty`);
