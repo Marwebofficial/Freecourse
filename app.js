@@ -1,9 +1,9 @@
-let user = ["james"];
+let user = ["james","jane"];
 const request = prompt(`Enter your registered name`);
 let create = user.push(request);
-if (request === user) {
+if (user === request) {
   exe();
-} else if (request != user) {
+} else if (user!= request) {
   prompt(`you are not registered pls register`);
   exe2();
 } else {
