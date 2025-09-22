@@ -1,12 +1,21 @@
-let user = ["dave", "sam"];
-let request = prompt("Enter your name");
+let user = ["james"];
+const request = prompt(`Enter your registered name`);
+let create = user.push(request);
 if (request == user) {
-  alert(`Welcome : ${request}`);
+  exe();
 } else if (request != user) {
-  user.push(request);
-  alert(`you were added : ${request}`);
-} else if (request == "") {
-  alert("cant leave input empty");
+  prompt(`you are not registered pls register`);
+  exe2();
 } else {
-  alert("you are not allowed");
+  exe3();
+}
+
+function exe() {
+  alert(`Welcome back ${request}`);
+}
+function exe2() {
+  alert(`${create} you were just registered`);
+}
+function exe3() {
+  alert(`you cant leave input empty`);
 }
