@@ -1,0 +1,204 @@
+/* --- Global Styles --- */
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --background-color: #f8f9fa;
+    --text-color: #343a40;
+    --white: #ffffff;
+    --border-radius: 5px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* --- Header & Navigation --- */
+header {
+    background-color: var(--white);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: var(--primary-color);
+    font-size: 1.8em;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    margin-left: 20px;
+    padding: 8px 12px;
+    transition: color 0.3s;
+}
+
+nav a:hover:not(.btn) {
+    color: var(--primary-color);
+}
+
+/* --- Buttons --- */
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s, opacity 0.3s;
+}
+
+.btn.primary {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.btn.primary:hover {
+    background-color: #0056b3;
+}
+
+.btn:not(.primary) {
+    background-color: var(--secondary-color);
+    color: var(--white);
+}
+
+.btn:not(.primary):hover {
+    opacity: 0.9;
+}
+
+.btn.large {
+    padding: 15px 25px;
+    font-size: 1.1em;
+}
+
+.btn.full-width {
+    width: 100%;
+}
+
+
+/* --- Welcome Hero Section --- */
+.welcome-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('background-image.jpg') no-repeat center center/cover; /* Replace 'background-image.jpg' */
+    color: var(--white);
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.welcome-hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.welcome-hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+/* --- Features Section --- */
+#features {
+    text-align: center;
+    padding: 40px 0;
+}
+
+#features h3 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: var(--primary-color);
+}
+
+.feature-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.feature-item {
+    background-color: var(--white);
+    padding: 30px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex-basis: 30%;
+}
+
+.feature-item h4 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+/* --- Form Styles (Login/Sign Up) --- */
+.form-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #e9ecef; /* Light background for form pages */
+}
+
+.form-container {
+    background-color: var(--white);
+    padding: 40px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--primary-color);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: var(--border-radius);
+    font-size: 1em;
+}
+
+.form-footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--secondary-color);
+    color: var(--white);
+    margin-top: 40px;
+}
