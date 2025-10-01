@@ -3,50 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to FreeCrashCourse</title>
+    <title>Welcome to FreeCrashCourse - Exam Success Starts Here</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header class="main-header">
         <div class="container">
-            <h1>FreeCrashCourse</h1>
-            <nav>
+            <div class="logo">FreeCrashCourse</div>
+            <nav class="main-nav">
                 <a href="index.html">Home</a>
-                <a href="#about">About</a>
-                <a href="login.html" class="btn">Login</a>
+                <a href="#features">Features</a>
+                <a href="#mock-exams">Exams</a>
+                <a href="login.html" class="btn secondary">Login</a>
                 <a href="signup.html" class="btn primary">Sign Up</a>
             </nav>
         </div>
     </header>
 
-    <main class="welcome-hero">
-        <div class="container">
-            <h2>Your Path to Exam Success Starts Here.</h2>
-            <p>Access free mock exams, past questions, and a vibrant community forum.</p>
-            <a href="signup.html" class="btn primary large">Start Learning for Free!</a>
-        </div>
+    <main>
+        <section class="hero-section">
+            <div class="container hero-content">
+                <h1>Master Your Exams. <span class="highlight">Achieve Your Goals.</span></h1>
+                <p class="subtitle">Access unlimited, free mock exams, past questions, and expert community support to ace any test.</p>
+                <div class="hero-cta-group">
+                    <a href="signup.html" class="btn primary large">Get Started Free Today</a>
+                    <a href="#features" class="btn outline large">Discover Features</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="feature-showcase">
+            <div class="container">
+                <h2 class="section-title">Everything You Need to Succeed</h2>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <span class="icon">🚀</span>
+                        <h3>Mock Exam Simulation</h3>
+                        <p>Practice under timed conditions with our accurate exam simulators for a real-world testing experience.</p>
+                    </div>
+                    <div class="feature-card">
+                        <span class="icon">📜</span>
+                        <h3>Authentic Past Questions</h3>
+                        <p>Download and review official past exam papers to identify trends and focus your study efforts.</p>
+                    </div>
+                    <div class="feature-card">
+                        <span class="icon">💬</span>
+                        <h3>Vibrant Study Forum</h3>
+                        <p>Ask questions, share notes, and collaborate with thousands of students and tutors in our community.</p>
+                    </div>
+                    <div class="feature-card">
+                        <span class="icon">📊</span>
+                        <h3>Performance Analytics</h3>
+                        <p>Track your progress, highlight weak areas, and see how you rank among other test-takers.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-banner">
+            <div class="container">
+                <h3>Ready to Stop Cramming and Start Crashing?</h3>
+                <a href="signup.html" class="btn primary large">Create Your Free Account</a>
+            </div>
+        </section>
+        
+        <section id="mock-exams" class="container exam-showcase">
+            <h2 class="section-title">Popular Exam Categories</h2>
+            <div class="exam-list">
+                <div class="exam-item">University Entrance</div>
+                <div class="exam-item">Professional Certifications</div>
+                <div class="exam-item">High School Finals</div>
+                <div class="exam-item">Government Exams</div>
+            </div>
+        </section>
+        
     </main>
 
-    <section id="features" class="container">
-        <h3>What We Offer</h3>
-        <div class="feature-grid">
-            <div class="feature-item">
-                <h4>Mock Exams 📝</h4>
-                <p>Simulate real exam conditions for any test.</p>
-            </div>
-            <div class="feature-item">
-                <h4>Past Questions 📚</h4>
-                <p>Practice with real historical exam papers.</p>
-            </div>
-            <div class="feature-item">
-                <h4>Community Forum 🗣️</h4>
-                <p>Connect, share, and learn with fellow students.</p>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 FreeCrashCourse. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a> |
+                <a href="#">Terms of Use</a> |
+                <a href="#">Admin Login</a>
             </div>
         </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 FreeCrashCourse. All rights reserved.</p>
     </footer>
 </body>
 </html>
